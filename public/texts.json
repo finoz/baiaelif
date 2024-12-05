@@ -1,0 +1,302 @@
+{
+  "global": {
+    "email": "altaformazione@agricola2000.com"
+  },
+  "header": {
+    "list": [
+      {
+        "id": "objective",
+        "text": "Corso"
+      },
+      {
+        "id": "program",
+        "text": "Programma"
+      },
+      {
+        "id": "partners",
+        "text": "Patrocini"
+      },
+      {
+        "id": "registration",
+        "text": "Iscriviti"
+      }
+    ]
+  },
+  "hero": {
+    "title": "Gestione e Strategia dell’Impresa Agroalimentare",
+    "subtitle": "Pianifica, gestisci e investi ora per il tuo domani",
+    "cta": "Iscriviti al corso"
+  },
+  "focus": {
+    "list": [
+      {
+        "id": "area",
+        "icon": "graph",
+        "title": "Area tematica",
+        "subtitle": "Gestione d'impresa",
+        "text": "Migliorare la competitività della propria realtà"
+      },
+      {
+        "id": "duration",
+        "icon": "cal",
+        "title": "Durata",
+        "subtitle": "120 ore",
+        "text": "Venerdì 9:00-18:00,<br>Sabato 9:00-13:00"
+      },
+      {
+        "id": "delivery",
+        "icon": "people",
+        "title": "Erogazione",
+        "subtitle": "Modalità ibrida",
+        "text": "Venerdì in presenza,<br>Sabato da remoto"
+      },
+      {
+        "id": "location",
+        "icon": "place",
+        "title": "Location",
+        "subtitle": "COMBO",
+        "text": "<a href='https://maps.app.goo.gl/83cKybeXYqqWxmuC8' target='_blank'>Ripa di Porta Ticinese, 83 - 20143 Milano</a>"
+      }
+    ]
+  },
+  "objective": {
+    "title": "Obiettivo del Corso",
+    "text": "Fornire gli strumenti per migliorare la competitività della tua impresa attraverso lo sviluppo di competenze imprenditoriali, innovative e di leadership."
+  },
+  "advantages": {
+    "title": "Vantaggi del Corso",
+    "list": [
+      "Approccio multidisciplinare",
+      "Esercitazioni",
+      "Case history",
+      "Networking",
+      "Docenti provenienti dalle migliori realtà",
+      "Erogazione ibrida – frontali e online"
+    ]
+  },
+  "program": {
+    "title": "Il programma",
+    "listtitle": "Moduli trattati",
+    "list": [
+      "Strategia e imprenditorialità",
+      "Bilancio e controllo di gestione",
+      "Marketing e comunicazione",
+      "Supply chain e mercati internazionali",
+      "Organizzazione e gestione delle persone"
+    ]
+  },
+  "overview": {
+    "title": "Esplora il Corso",
+    "subtitle": "Alta Formazione nel settore Agroalimentare",
+    "text": [
+      "Il corso ti consentirà una crescita professionale fornendo gli strumenti che renderanno la tua impresa ancor più competitiva, grazie alla conoscenza delle dinamiche e delle sfide che caratterizzano le <b>filiere agroalimentari</b>.",
+      "Il programma si distingue per la sua forte enfasi sull'applicazione pratica delle conoscenze acquisite. Grazie a un piano didattico suddiviso in moduli, acquisirai una visione dettagliata dell’<b>organizzazione aziendale</b> e dei <b>processi gestionali</b> di un’impresa agroalimentare.",
+      "Le testimonianze di aziende leader e di professionisti del <b>settore Agrifood-tech</b> saranno spunto di confronto ed ispirazione. Acquisirai competenze e nozioni essenziali per la corretta <b>gestione d’impresa</b>, che permetteranno di sviluppare soluzioni innovative per la tua realtà.",
+      "Il corpo docente è composto da accademici qualificati provenienti da importanti Facoltà e specialisti del settore con ampia esperienza. Avrai l’opportunità di imparare da esperti delle tematiche trattate e di connetterti con una rete di professionisti.",
+      "Il corso alterna lezioni frontali e online e grazie alla posizione strategica a <b>Milano</b>, potrai raggiungere facilmente la sede delle lezioni.",
+      "Unisciti a noi e inizia il tuo viaggio verso una carriera ancora più di successo nel settore agroalimentare."
+    ],
+    "lengthtoggle_showmore": "Mostra di più",
+    "lengthtoggle_showless": "Mostra di meno",
+    "cta": "Scarica il dettaglio del programma"
+  },
+  "teachers": {
+    "title": "Docenti",
+    "list": [
+      {
+        "id": "ghezzi",
+        "name": "Antonio",
+        "surname": "Ghezzi",
+        "company": "Politecnico di Milano"
+      },
+      {
+        "id": "torresan",
+        "name": "Pietro Italo",
+        "surname": "Torresan",
+        "company": "Politecnico di Milano"
+      },
+      {
+        "id": "bianchi",
+        "name": "Alessandra",
+        "surname": "Bianchi",
+        "company": "I-AER"
+      },
+      {
+        "id": "callaci",
+        "name": "Antonino",
+        "surname": "Callaci",
+        "company": "Renantis"
+      },
+      {
+        "id": "vittadini",
+        "name": "Nicoletta",
+        "surname": "Vittadini",
+        "company": "Università Cattolica del Sacro Cuore di Milano"
+      },
+      {
+        "id": "frisio",
+        "name": "Dario",
+        "surname": "Frisio",
+        "company": "Università degli Studi di Milano"
+      },
+      {
+        "id": "olper",
+        "name": "Alessandro",
+        "surname": "Olper",
+        "company": "Università degli Studi di Milano"
+      },
+      {
+        "id": "fadigati",
+        "name": "Michele",
+        "surname": "Fadigati",
+        "company": "WIP Italia"
+      },
+      {
+        "id": "frascarelli",
+        "name": "Angelo",
+        "surname": "Frascarelli",
+        "company": "Università degli studi di Perugia"
+      },
+      {
+        "id": "balzan",
+        "name": "Ada Rosa",
+        "surname": "Balzan",
+        "company": "ARB Sbpa"
+      },
+      {
+        "id": "catania",
+        "name": "Pietro",
+        "surname": "Catania",
+        "company": "ALEF Consulting"
+      },
+      {
+        "id": "darenzio",
+        "name": "Maria Cristina",
+        "surname": "D’Arenzio",
+        "company": "Confagricoltura"
+      },
+      {
+        "id": "maggiore",
+        "name": "Tommaso",
+        "surname": "Maggiore",
+        "company": "Università degli Studi di Milano"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Gestione e Strategia dell’Impresa Agroalimentare",
+    "subtitle": "Unisciti a noi e inizia il tuo viaggio verso una carriera ancora più di successo nel settore agroalimentare",
+    "cta": "Iscriviti al corso",
+    "offer": {
+      "badge": "Early bird price",
+      "terms": "Fino al 6 agosto",
+      "price_full": "4.600 €",
+      "price_sale": "4.000 €",
+      "percent_sale": "13%",
+      "list": [
+        "120 ore di lezione",
+        "esercitazioni",
+        "case history",
+        "networking"
+      ],
+      "note": "Posti limitati - Possibilità di pagamento in due rate – Termine offerta a discrezione dell’ente promotore"
+    }
+  },
+  "partners": {
+    "title": "Patrocini",
+    "list": ["fodaf", "desp", "sal", "invernizzi"]
+  },
+  "registration": {
+    "title": "Iscriviti subito",
+    "subtitle": "Registrati per confermare la tua presenza al corso.<br>Ricordati che hai tempo solo fino al 6 agosto per il prezzo speciale Early Bird.",
+    "form": {
+      "name": "Nome",
+      "surname": "Cognome",
+      "email": "Email",
+      "tel": "Telefono",
+      "privacy": "Accetto che i dati personali vengano trasferiti a Brevo per il trattamento in conformità all'<a href=\"https://www.brevo.com/it/legal/privacypolicy/\" target=\"_blank\" rel=\"noopener noreferrer\">Informativa sulla privacy di Brevo</a>.",
+      "submit": "Iscriviti"
+    },
+    "answer": {
+      "title": "Iscrizione effettuata con successo",
+      "subtitle": "Verrai presto contattato per maggiori dettagli."
+    }
+  },
+  "about": {
+    "title": "Chi siamo",
+    "subtitle": "Agricola 2000, una realtà con le radici ben salde e lo sguardo rivolto al futuro.",
+    "list": [
+      {
+        "title": "Mission",
+        "text": "Essere punto di riferimento in Europa nella sperimentazione e nella divulgazione di tecniche, tecnologie e prodotti innovativi in agricoltura."
+      },
+      {
+        "title": "Vision",
+        "text": "Cibo più sano in un ambiente sicuro."
+      },
+      {
+        "title": "Purpose",
+        "text": "Partecipare attivamente alla protezione del pianeta e alla sicurezza alimentare."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hai dubbi o hai bisogno di aiuto?",
+    "subtitle": "Se hai domande non esitare a contattarci. Il nostro team ti aiuterà il prima possibile!    ",
+    "cta": "Scrivi una mail",
+    "list": [
+      {
+        "id": "email",
+        "icon": "mail",
+        "title": "Email",
+        "text": "altaformazione@agricola2000.com"
+      },
+      {
+        "id": "phone",
+        "icon": "phone",
+        "title": "Telefono / WhatsApp",
+        "text": "+39 348 31 80 239"
+      },
+      {
+        "id": "location",
+        "icon": "place",
+        "title": "Sede Agricola 2000",
+        "text": "via Trieste 9 | 20067 Tribiano, Milano"
+      }
+    ]
+  },
+  "info": {
+    "trigger": "Clicca qui per avere informazioni sull'open day",
+    "modal": {
+      "title": "Open Day - 11 settembre",
+      "subtitle": "Scopri il Corso \"Gestione e Strategia dell’Impresa Agroalimentare\". Inserisci i tuoi dati per ricevere le informazioni per partecipare.",
+      "cta": "Invia"
+    }
+  },
+  "footer": {
+    "corp": "Alta Formazione | Agricola 2000",
+    "list": [
+      {
+        "id": "objective",
+        "text": "Corso"
+      },
+      {
+        "id": "program",
+        "text": "Programma"
+      },
+      {
+        "id": "partners",
+        "text": "Patrocini"
+      },
+      {
+        "id": "registration",
+        "text": "Iscriviti"
+      },
+      {
+        "id": "privacy",
+        "text": "Privacy Policy",
+        "link": "https://www.agricola2000.com/privacy-policy-2/"
+      }
+    ]
+  }
+}

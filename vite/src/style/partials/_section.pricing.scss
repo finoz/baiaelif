@@ -1,0 +1,125 @@
+@use '../helpers' as *;
+
+.section.section__pricing {
+    .section {
+        &__content {
+            @include breakpoint(tablet-landscape) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "title card" "subtitle card" "cta card";
+                align-items: center;
+            }
+        }
+        &__title {
+            @include breakpoint(tablet-landscape) {
+                grid-area: title;
+                margin-top: auto;
+            }
+            &::before {
+                content: "";
+                display: block;
+                @include dots();
+                width: 8.6rem;
+                height: 8.6rem;
+                margin-bottom: 2.4rem;
+                @include breakpoint(tablet-landscape) {
+                    @include dots(4.2rem);
+                    width: 10rem;
+                    height: 10rem;
+                    margin-bottom: 4.8rem;
+                }
+            }
+        }
+        &__subtitle {
+            @include breakpoint(tablet-landscape) {
+                grid-area: subtitle;
+            }
+        }
+        &__cta {
+            @include breakpoint(tablet-landscape) {
+                grid-area: cta;
+                margin-bottom: auto;
+            }
+        }
+    }
+    .card {
+        position: relative;
+        background-color: var(--color-secondary-bg);
+        padding: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+        border-radius: 1.6rem;
+        @include breakpoint(tablet-landscape) {
+            grid-area: card;
+            max-width: 36rem;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        &__badge {
+            @include badge;
+        }
+        &__terms {
+            @extend %font-primary-s;
+        }
+        &__list {
+            @extend %list-cool;
+            @include breakpoint(tablet-landscape) {
+                padding: 0;
+                li {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__note {
+            @extend %font-primary-s;
+            padding-top: 2.4rem;
+            border-top: 1px solid var(--color-text-inverted);
+        }
+        &__price {
+            position: static;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.2rem;
+            margin: 0;
+            &-full {
+                text-decoration: line-through;
+                font-size: 2.4rem;
+                font-weight: 300;
+            }
+            &-sale {
+                font-size: 4rem;
+                font-weight: 700;
+            }
+            &-percent {
+                position: absolute;
+                top: -2rem;
+                right: -2rem;
+                width: 6rem;
+                height: 6rem;
+                color: var(--color-primary);
+                background-color: var(--color-accent);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-size: 2.2rem;
+                font-weight: 700;
+                border-radius: 50%;
+                line-height: 1;
+                transform: rotate(20deg);
+                box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+                &::after {
+                    content: 'OFF';
+                    font-size: 1.2rem;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}

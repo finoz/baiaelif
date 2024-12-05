@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+public/assets
+dist/
+.vscode/ftp-kr.sync.cache.json

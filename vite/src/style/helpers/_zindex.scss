@@ -1,0 +1,8 @@
+/**
+ * Ref: https://www.smashingmagazine.com/2014/06/sassy-z-index-management-for-complex-layouts/
+ */
+$elements: (pagenav, header, nav, search, modals);
+$zindexMin: 3;
+@function zindex($key) {
+    @return index($elements, $key) + $zindexMin;
+}

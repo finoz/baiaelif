@@ -1,0 +1,33 @@
+// array
+$icons: (
+    'cal', 
+    'gears', 
+    'globe', 
+    'graph', 
+    'hands', 
+    'mail', 
+    'mark', 
+    'people', 
+    'place', 
+    'phone',
+    'profile', 
+    'facebook', 
+    'linkedin', 
+    'instagram'
+    );
+
+@each $icon in $icons {
+    .icon__#{$icon} {
+        -webkit-mask: url('@imgs/icons/#{$icon}.svg') no-repeat center;
+        mask: url('@imgs/icons/#{$icon}.svg') no-repeat center;
+    }
+}
+
+.icon {
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--color-text);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}

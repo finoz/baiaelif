@@ -1,0 +1,30 @@
+@use '../helpers' as *;
+
+.footer {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+        @extend %default-layout;
+        border-top: 1px solid var(--color-secondary-bg);
+        margin-top: 3.2rem;
+    }
+    &__corp {
+        @extend %font-primary-s;
+    }
+    &__nav {
+        ul {
+            list-style: none;
+            display: flex; flex-direction: row;
+            gap: 1.6rem;
+            flex-wrap: wrap;
+            li {
+                a {
+                    @extend %cta-inline;
+                }
+            }
+        }
+    }   
+}

@@ -1,0 +1,17 @@
+@use 'colors' as *;
+
+$focusable-elements: ('a[href]', 'button', 'input', 'textarea', 'select', 'summary', 'details', '[tabindex]:not([tabindex="-1"])');
+
+@mixin focus($position: 'out',  $color: blue, $thickness: 2px) {
+  outline: 0 solid rgba(0, 0, 0, 0);
+  z-index: 2;
+  @if ($position == 'in') {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    position: relative;
+    outline: 1px solid $color;
+    outline-offset: 1px;
+  } @else {
+    outline: 0 solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 $thickness white, 0 0 0 #{$thickness + 1} $color;
+  }
+}

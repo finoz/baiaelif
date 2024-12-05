@@ -1,0 +1,69 @@
+@use '../helpers' as *;
+
+.section {
+    position: relative;
+    margin-top: 4.2rem;
+    @include breakpoint(tablet-landscape) {
+        margin-top: 8rem;
+    }
+    &__inner {
+        position: relative;
+        @extend %default-layout;
+        display: flex;
+        flex-direction: column;
+        gap: 4.2rem;
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 4.2rem;
+        padding: 1.6rem;
+        @include breakpoint(tablet-landscape) {
+            padding: 3.2rem;
+        }
+    }
+    &__title {
+        @extend %font-secondary-xl;
+        color: var(--color-primary);
+    }
+    &__subtitle {
+        @extend %font-primary-xl;
+    }
+    &__listtitle {
+        @extend %font-primary-l;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: var(--color-secondary)
+    }
+    &__text,
+    &__list {
+        @extend %font-primary-m;
+    }
+
+    &__cta {
+        @extend %cta-primary;
+        @include breakpoint(tablet-portrait, max) {
+            width: 100%;
+        }
+    }
+    &__figure {
+        position: relative;
+        z-index: 1;
+        background-color: var(--color-secondary-bg);
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 1.6rem;
+        @include breakpoint(tablet-landscape) {
+            border-radius: 3.2rem;
+        }
+        img {
+            border-radius: 1.6rem;
+            @include breakpoint(tablet-landscape) {
+                border-radius: 3.2rem;
+            }
+        }
+    }
+}

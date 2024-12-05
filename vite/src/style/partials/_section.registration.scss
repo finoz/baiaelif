@@ -1,0 +1,58 @@
+@use '../helpers' as *;
+
+.section.section__registration {
+    .section {
+        &__inner {
+            @include breakpoint(tablet-landscape) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "title form" "subtitle form";
+                align-items: center;
+            }
+        }
+        &__title {
+            @include breakpoint(tablet-landscape) {
+                grid-area: title;
+                margin-top: auto;
+            }
+        }
+        &__subtitle {
+            @include breakpoint(tablet-landscape) {
+                grid-area: subtitle;
+                margin-bottom: auto;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                display: block;
+                bottom: calc(100% + 1.5rem); 
+                left: 2.4rem;
+                @include dots();
+                width: 5rem;
+                height: 5rem;
+                @include breakpoint(tablet-landscape) {
+                    position: relative;
+                    bottom: auto;
+                    left: auto;
+                    margin-top: 2.4rem;
+                    @include dots(4.2rem);
+                    width: 10rem;
+                    height: 10rem;
+                }
+            }
+            
+        }
+        &__form {
+            background-color: var(--color-text-inverted);
+            border-radius: var(--size-s);
+            box-shadow: 0 0 1.6rem 0 rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            @include breakpoint(tablet-landscape) {
+                grid-area: form;
+            }
+        }
+    } 
+}

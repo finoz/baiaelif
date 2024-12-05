@@ -1,0 +1,69 @@
+@use 'sass:math';
+@use 'sizes' as *;
+@use 'colors' as *;
+@use 'typography' as *;
+
+%cta-reset {
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+    border-radius: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+%cta-primary {
+    @extend %cta-reset;
+    @extend %font-primary-s-uppercase;
+    position: relative;
+    cursor: pointer;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: fit-content;
+    min-height: var(--button-height);
+    padding: 1.2rem 3.2rem;
+    border-radius: 0.8rem;
+    color: var(--color-text);
+    background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        // TODO
+    }
+}
+
+%cta-secondary {
+    @extend %cta-primary;
+    color: var(--color-text-inverted);
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+%cta-clear {
+    @extend %cta-secondary;
+    background-color: transparent;
+    color: var(--color-primary);
+}
+
+%cta-inline {
+    @extend %font-primary-s-uppercase;
+    display: flex;
+    padding: 0;
+    background: none;
+    border: 0 solid;
+    border-radius: 0;
+    min-height: auto;
+    &:hover {    
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+    }
+}

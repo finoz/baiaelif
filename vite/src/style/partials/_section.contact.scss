@@ -1,0 +1,72 @@
+@use '../helpers' as *;
+
+.section.section__contact {
+    .section {
+        &__content {
+            position: relative;
+            background-color: var(--color-secondary-bg);
+            padding: 2.4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            border-radius: 1.6rem;
+            @include breakpoint(tablet-landscape) {
+                display: grid;
+                gap: 4.2rem;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-areas: "title list" "subtitle list" "cta list";
+                padding: 6.4rem;
+            }
+        }
+        &__title {
+            @include breakpoint(tablet-landscape) {
+                grid-area: title;
+            }
+        }
+        &__subtitle {
+            @include breakpoint(tablet-landscape) {
+                grid-area: subtitle;
+            }
+        }
+        &__cta {
+            @extend %cta-secondary;
+            @include breakpoint(tablet-landscape) {
+                grid-area: cta;
+            }
+        }
+        &__list {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            padding-top: 2.4rem;
+            @include breakpoint(tablet-landscape) {
+                grid-area: list;
+            }
+            li {
+                display: grid;
+                grid-template-columns: 3.2rem auto;
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-areas: "icon title" "icon text";
+                column-gap: 0.8rem;
+            }
+            h3 {
+                @extend %font-primary-l;
+                grid-area: title;
+            }
+            p {
+                @extend %font-primary-m;
+                color: var(--color-primary);
+                margin: 0;
+                grid-area: text;
+            }
+            .icon {
+                width: 2.4rem;
+                height: 2.4rem;
+                background-color: var(--color-primary);
+                grid-area: icon;
+            }
+        }
+    }
+}
