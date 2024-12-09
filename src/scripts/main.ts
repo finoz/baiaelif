@@ -1,4 +1,4 @@
-import "../styles/main.scss";
+import "../style/main.scss";
 
 const setupScrollBlur = () => {
   const header = document.querySelector(".header") as HTMLElement;
