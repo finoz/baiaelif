@@ -1,0 +1,50 @@
+@use 'sass:math';
+@use 'colors' as *;
+@use 'typography' as *;
+
+%cta-reset {
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    background: transparent;
+    color: inherit;
+    border: 0 none;
+    border-radius: 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+%cta-primary {
+    @extend %cta-reset;
+    @extend %font-primary-l-uppercase;
+    padding: 1.6rem 3.2rem;
+    display: flex;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    &::before,
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        width: 2.4rem;
+        height: 1px;
+        background-color: currentColor;
+        transition: all 0.6s ease-in-out;
+    }
+    &::before {
+        left: 0;
+    }
+    &::after {
+        right: 0;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        opacity: 0.8;
+        &::before,
+        &::after {
+            width: 100%;
+        }
+    }
+}

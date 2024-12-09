@@ -1,13 +1,75 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="it">
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/img/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <title>Baia & Elif | 8.2.2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="/img/almond_blossom.jpg" alt="">
+    </header>
+    <main class="main">
+        <h1 class="main__title"><strong>Baia & Elif</strong><span>8.2.2025</span></h1>
+        <!-- Pagina 1 -->
+        <section class="section section--cit">
+            <blockquote>
+                <p>“Ma il mio cuore è gioioso come il nido che ricorda e come la terra che spera sotto la neve. Perché so che tutto è dove deve essere e va dove deve andare: al luogo assegnato da una sapienza che (il Cielo ne sia lodato!) non è la nostra.”</p>
+                <footer>O. V. Milosz, <cite>Miguel Mañara</cite></footer>
+            </blockquote>
+        </section>
+        
+        <!-- Pagina 2 -->
+        <section class="section section--annuncio">
+            <header class="section--annuncio__intestazione">
+                <h2 class="section--annuncio__nomi"><span>Luca Maria Baia</span> & <span>Elisa Fabbro</span></h2>
+                <p class="section--annuncio__annuncio">Annunciano con gioia il loro matrimonio</p>
+            </header>
+            <div class="section--annuncio__dettagli">
+                <p class="section--annuncio__data">8 febbraio 2025</p>
+                <p class="section--annuncio__ora">ore 11.30</p>
+            </div>
+            <div class="section--annuncio__luogo">
+                <h2 class="section--annuncio__sottotitolo">Presso la Chiesa di San Carlo Borromeo</h2>
+                <a class="section--annuncio__indirizzo" href="https://maps.app.goo.gl/2bpKERxrfCMyYUJY9" target="_blank">Via Gran Paradiso 2, Novate Milanese</a>
+            </div>
+        </section>
+        
+        <!-- Pagina 3 -->
+        <section class="section section--party">
+            <h2 class="section--party__titolo">Dopo la cerimonia saremo lieti di festeggiare con voi</h2>
+            <div class="section--party__ricevimento">
+                <p class="section--party__location">Officine del Volo</p>
+                <a class="section--party__indirizzo" href="https://maps.app.goo.gl/wyAWf4f5P61NUSkc9" target="_blank">Via Mecenate, 76|5, Milano</a>
+            </div>
+        </section>
+        
+        <!-- Pagina 4 - REGALO -->
+        <section class="section section--regalo">
+            <h2 class="section--regalo__titolo">Volete sostenere il nostro nido d'amore?</h2>
+            <div class="section--regalo__copy">
+                <p>se volete partecipare alla costruzione della nostra nuova famiglia, potete contribuire ad un regalo dalla lista nozze tramite bonifico.</p>
+                <dl>
+                    <dt>Intestatario:</dt>
+                    <dd>BAIA ARRAFFONE</dd>
+                    <dt>Iban:</dt>
+                    <dd>ITXXXZZZZZZZZZZZZZZZ</dd>
+                    <dt>Causale:</dt>
+                    <dd><em>Il regalo che hai scelto • il tuo nome</em></dd>
+                </dl>
+            </div>
+            <a class="section--regalo__cta" href="https://www.google.it/search?q=lista+nozze" target="_blank">lista nozze</a>
+        </section>
+
+        <!-- Pagina 5 - RSVP -->
+        <section class="section section--rsvp">
+            <a class="section--rsvp__cta" href="https://www.google.it/search?q=google+forms" target="_blank">RSVP</a>
+        </section>
+    </main>
+</body>
+<script type="module" src="/src/scripts/main.ts"></script>
 </html>

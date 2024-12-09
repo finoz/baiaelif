@@ -1,0 +1,83 @@
+@use 'breakpoints' as *;
+
+:root {
+    --font-size-root: 10px;
+    --font-family-primary: 'Commissioner', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @extend %headings !optional;
+    //font-size: var(--font-size-root);
+    //font-weight: normal;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    line-height: inherit;
+}
+
+%font-base {
+    font-family: var(--font-family-primary);
+    font-weight: 300;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+// note
+%font-primary-s {
+    @extend %font-base;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    @include breakpoint(tablet-landscape) {
+        font-size: 1.6rem;
+    }
+}
+
+/* basic */
+%font-primary-m {
+    @extend %font-base;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    @include breakpoint(tablet-landscape) {
+        font-size: 2.4rem;
+    }
+}
+
+// cta
+%font-primary-l-uppercase {
+    @extend %font-primary-m;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+%font-primary-l {
+    @extend %font-base;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    @include breakpoint(tablet-landscape) {
+        font-size: 4rem;
+    }
+}
+
+%font-primary-xl {
+    @extend %font-base;
+    font-size: 6rem;
+    line-height: 1.5;
+    @include breakpoint(tablet-landscape) {
+        font-size: 8rem;
+    }
+}
+
+
+// cit
+%font-primary-l-light {
+    @extend %font-primary-l;
+    line-height: 2;
+    font-weight: 100;
+}
