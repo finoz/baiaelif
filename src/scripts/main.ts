@@ -1,12 +1,14 @@
-import "../style/main.scss";
+import "../styles/main.scss";
 
 const setupScrollBlur = () => {
-  const header = document.querySelector(".header");
-  const section = document.querySelector(".section");
+  const header = document.querySelector(".header") as HTMLElement;
+  const section = document.querySelector(".section") as HTMLElement;
+
+  if (!header || !section) return;
 
   const observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry) => {
+      entries.forEach(() => {
         const sectionRect = section.getBoundingClientRect();
         const progress = Math.min(
           1,
